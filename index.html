@@ -18,19 +18,37 @@ background: linear-gradient(0deg, rgba(0,115,164,1) 0%, rgba(232,115,164,1) 100%
 	   .bigText{
 	   font-size: 100px;
 	   font-weight:bold;
+	   position: fixed;
+	   top: 50%;
+	   left: 50%;
+	   transform: translate(-50%, -110%);
 	   }
 	   .mediumText{
 	   font-size: 50px;
 	   font-weight:bold;
+	   position: fixed;
+	   top: 50%;
+	   left: 50%;
+	   transform: translate(-50%, -50%);
 	   }
 	   .buttonText{
-	   font-size: 50px;
+	   font-size: 40px;
 	   font-weight:bold;
-	   color:grey;
+	   color: #ffffff;
+	   position: fixed;
+	   top: 50%;
+	   left: 50%;
+	   transform: translate(-50%, 50%);
+	   }
+	   .buttonFix{
+	   border:none;
+	   background-color:transparent;
+	   outline:none;
 	   }
 	   .bottom {
     position: fixed;
     bottom: 10;
+	
 }
 }
     </style>
@@ -39,7 +57,7 @@ background: linear-gradient(0deg, rgba(0,115,164,1) 0%, rgba(232,115,164,1) 100%
 <div id="grad">
 	<div class="bigText">Poll v1</div>
 	<div class="mediumText">Simple Poll Bot For Discord</div>
-	  <button onclick="window.location.href = 'https://discordapp.com/oauth2/authorize?client_id=767567847769374751&scope=bot&permissions=2146958591';"><div class="buttonText">Invite</div></button>
+	   <button class="buttonFix" onclick="window.location.href='https://discordapp.com/oauth2/authorize?client_id=767567847769374751&scope=bot&permissions=2146958591'"><div class="buttonText"><u>Invite Bot</u></div></button>
 	<div class="bottom">© CheesyBC 2020</div>
 </div>
 </body>
